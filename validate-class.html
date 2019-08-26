@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Class</title>
+</head>
+<body>
+<script>
+    let name="C0719K";
+    if (validateClass(name)){
+        console.log(true);
+    }else {
+        console.log(false);
+    }
+    function validateClass(value) {
+        let regexp=/^[ACP]+[0-9]{4}[GHIKLM]$/;
+        if (regexp.test(value)){
+            return true;
+        }else {
+            return false;
+        }
+
+    }
+</script>
+</body>
+</html>

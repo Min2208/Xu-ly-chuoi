@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate PhoneNumber</title>
+</head>
+<body>
+<script>
+    let phoneNumber="(84)-(0902184871)";
+    if (validatePhoneNumber(phoneNumber)){
+        console.log(true);
+    }else {
+        console.log(false);
+    }
+    function validatePhoneNumber(number) {
+        let regexp=/^[(0-9)]{4}(?:-[(0-9)]{12,13}$)/;
+        if (regexp.test(number)){
+            return true;
+        }else {
+            return false;
+        }
+    }
+</script>
+</body>
+</html>
